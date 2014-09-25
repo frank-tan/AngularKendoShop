@@ -2,7 +2,7 @@
 
 angular.module('angularKendoShopApp')
   .constant('productListActiveClass', 'btn-primary')
-  .constant('productListPageCount', 1)
+  .constant('productListPageCount', 2)
   .controller('productListCtrl', function ($scope, $filter, productListActiveClass, productListPageCount) {
 
     var selectedCategory = null;
@@ -11,7 +11,12 @@ angular.module('angularKendoShopApp')
     $scope.pageSize = productListPageCount;
 
     $scope.selectCategory = function (newCategory) {
-      selectedCategory = newCategory;
+      if (newCategory === undefined) {
+        selectedCategory = null;
+      } else {
+        selectedCategory = newCategory;
+      }
+      
       $scope.selectedPage = 1;
     };
     $scope.selectPage = function (newPage) {
@@ -22,10 +27,12 @@ angular.module('angularKendoShopApp')
       return selectedCategory === null || product.category === selectedCategory;
     };
 
+    /* for highlighting the active category button */
     $scope.getCategoryClass = function (category) {
       return selectedCategory === category ? productListActiveClass : '';
     };
 
+    /* for highlighting the active page button */
     $scope.getPageClass = function (page) {
       return $scope.selectedPage === page ? productListActiveClass : '';
     };

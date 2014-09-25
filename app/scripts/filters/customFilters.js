@@ -19,21 +19,21 @@ angular.module('customFilters', [])
       }
     };
   })
-  .filter('range', function ($filter) {
-    return function (data, page, size) {
-      if (angular.isArray(data) && angular.isNumber(page) && angular.isNumber(size)) {
-        var startIndex = (page - 1) * size;
+  .filter('currentPageData', function ($filter) {
+    return function (data, currentPageNum, pageSize) {
+      if (angular.isArray(data) && angular.isNumber(currentPageNum) && angular.isNumber(pageSize)) {
+        var startIndex = (currentPageNum - 1) * pageSize;
         if (data.length < startIndex) {
           return [];
         } else {
-          return $filter('limitTo')(data.splice(startIndex), size);
+          return $filter('limitTo')(data.splice(startIndex), pageSize);
         }
       } else {
         return data;
       }
     };
   })
-  .filter('pageCount', function () {
+  .filter('pageNumberList', function () {
     return function (data, size) {
       if (angular.isArray(data)) {
         var result = [];

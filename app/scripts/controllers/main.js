@@ -13,28 +13,76 @@ angular.module('angularKendoShopApp')
     $scope.data = {
       products: [
         {
-          name: 'Product #1',
-          description: 'A product',
-          category: 'Category #1',
-          price: 100
+          name: 'Ippon Men',
+          description: 'High quality hand made men',
+          category: 'Bogu',
+          price: 300
         },
         {
-          name: 'Product #2',
-          description: 'A product',
-          category: 'Category #1',
-          price: 110
+          name: 'Ippon Cote',
+          description: 'High quality hand made cote',
+          category: 'Bogu',
+          price: 150
         },
         {
-          name: 'Product #3',
-          description: 'A product',
-          category: 'Category #2',
-          price: 210
+          name: 'Ippon Do',
+          description: 'High quality hand made do',
+          category: 'Bogu',
+          price: 200
         },
         {
-          name: 'Product #4',
-          description: 'A product',
-          category: 'Category #3',
-          price: 202
+          name: 'Ippon Tare',
+          description: 'High quality hand made tare',
+          category: 'Bogu',
+          price: 200
+        },
+        {
+          name: 'Bato Boken',
+          description: 'A premium bukuto for kata training',
+          category: 'Bukuto',
+          price: 90
+        },
+        {
+          name: 'Ryuto Boken',
+          description: 'Our top quality bukuto ',
+          category: 'Bukuto',
+          price: 120
+        },
+        {
+          name: 'Mushin Shinai',
+          description: 'A basic shinai for everyday training',
+          category: 'Shinai',
+          price: 30
+        },
+        {
+          name: 'Budonshin Shinai',
+          description: 'A premium shinai made of high quality bamboo',
+          category: 'Shinai',
+          price: 40
+        },
+        {
+          name: 'Zanshin Shinai',
+          description: 'Our top quality shinai, recommended for professional players and shiais',
+          category: 'Shinai',
+          price: 50
+        },
+        {
+          name: 'Kuranto Iaito',
+          description: 'A premium iaito',
+          category: 'Iaito',
+          price: 900
+        },
+        {
+          name: 'Seichuto Iaito',
+          description: 'A rare replica of a historical katana',
+          category: 'Iaito',
+          price: 1200
+        },
+        {
+          name: 'Gyakuto Iaito',
+          description: 'Our top quality iaito',
+          category: 'Iaito',
+          price: 2000
         }
       ]
     };
