@@ -4,7 +4,7 @@ angular.module('angularKendoShopApp')
   .constant('productListActiveClass', 'btn-primary')
   .constant('productListPageCount', 2)
   .controller('productListCtrl', function ($scope, $filter, productListActiveClass, productListPageCount) {
-
+    
     var selectedCategory = null;
 
     $scope.selectedPage = 1;

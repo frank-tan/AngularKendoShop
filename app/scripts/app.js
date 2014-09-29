@@ -16,12 +16,13 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'customFilters'
+    'customFilters',
+    'cart'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/productList.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
