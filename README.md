@@ -3,6 +3,8 @@ AngularKendoShop
 
 A web app frontend for a kendo shop.
 
+You need to install node.js, bower and grunt to run this web app. Please google and find out where and how. Personally I recommend using [Yeoman](http://yeoman.io/learning/index.html).
+
 To run this web app
 
 1. Clone [frank-tan/KendoShopBackend](https://github.com/frank-tan/KendoShopBackend) and follow the instructions to run the php backend
