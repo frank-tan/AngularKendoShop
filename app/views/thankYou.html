@@ -1,1 +1,8 @@
-<h3>Thank you - placeholder</h3>
+<div class="alert alert-danger" ng-show="data.orderError">Error({{data.orderError.status}}). The order could not be placed. <a href="#/placeorder" class="alert-link">Click here to try again</a> 
+</div>
+<div class="well" ng-hide="data.orderError">
+  <h2>We have received your order!</h2>
+  <p>Thanks for placing your order. Your reference id is</p>  
+  <div class="alert alert-success">{{data.orderId}}</div>
+  We'll ship your goods as soon as possible. If you need to talk to us, please reference this id.
+</div>

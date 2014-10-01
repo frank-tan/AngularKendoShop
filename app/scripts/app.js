@@ -37,7 +37,8 @@ angular
         templateUrl: 'views/thankYou.html'
       })
       .when('/placeOrder', {
-        templateUrl: '/views/placeOrder.html'
+        templateUrl: '/views/placeOrder.html',
+        controller: 'submitOrderController'
       })
       .otherwise({
         redirectTo: '/'
