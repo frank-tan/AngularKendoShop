@@ -1,5 +1,6 @@
 <div class="alert alert-danger" ng-show="data.error">Cannot connect to server. The product data was not loaded. <a href="/" class="alert-link">Click here to try again</a> 
 </div>
+
 <div class="panel panel-default row" ng-controller="productListCtrl" ng-hide="data.error">
   <div class="col-xs-3">
     <a ng-click="selectCategory()" class="btn btn-block btn-default btn-lg">All Products</a>
@@ -19,4 +20,4 @@
     </div>
   </div>
 </div>
-
+<cart-summary />
